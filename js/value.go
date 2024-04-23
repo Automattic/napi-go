@@ -1,7 +1,7 @@
 package js
 
 import (
-	"github.com/akshayganeshen/napi-go"
+	"github.com/Automattic/napi-go"
 )
 
 type Value struct {

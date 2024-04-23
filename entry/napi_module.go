@@ -8,7 +8,7 @@ package entry
 import "C"
 
 import (
-	"github.com/akshayganeshen/napi-go"
+	"github.com/Automattic/napi-go"
 )
 
 //export InitializeModule

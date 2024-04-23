@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/akshayganeshen/napi-go"
-	"github.com/akshayganeshen/napi-go/entry"
+	"github.com/Automattic/napi-go"
+	"github.com/Automattic/napi-go/entry"
 )
 
 func init() {

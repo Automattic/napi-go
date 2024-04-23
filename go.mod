@@ -1,3 +1,3 @@
-module github.com/akshayganeshen/napi-go
+module github.com/Automattic/napi-go
 
 go 1.18
