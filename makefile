@@ -18,7 +18,7 @@ TARGET_EXAMPLES = \
   $(addprefix $(TARGET_BUILDDIR)/, $(EXAMPLE_BINDINGS))
 
 # TODO: Configure CGO_LDFLAGS_ALLOW for non-darwin systems.
-CGO_LDFLAGS_ALLOW = ((-undefined,dynamic_lookup|-search_paths_first))
+CGO_LDFLAGS_ALLOW = (-Wl,(-undefined,dynamic_lookup|-no_pie|-search_paths_first))
 
 doc: $(TARGET_EXAMPLES)
 
