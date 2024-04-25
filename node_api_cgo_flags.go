@@ -10,7 +10,9 @@ package napi
 
 #cgo darwin LDFLAGS: -Wl,-undefined,dynamic_lookup
 #cgo darwin LDFLAGS: -Wl,-search_paths_first
-#cgo darwin LDFLAGS: -arch arm64
+#cgo darwin,amd64 LDFLAGS: -Wl,-no_pie
+#cgo darwin,amd64 LDFLAGS: -arch x86_64
+#cgo darwin,arm64 LDFLAGS: -arch arm64
 
 #cgo linux LDFLAGS: -Wl,-unresolved-symbols=ignore-all
 
