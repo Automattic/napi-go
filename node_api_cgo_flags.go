@@ -8,8 +8,7 @@ package napi
 #cgo CFLAGS: -I/usr/local/include/node
 #cgo CXXFLAGS: -std=c++11
 
-#cgo darwin LDFLAGS: -Wl,-undefined
-#cgo darwin LDFLAGS: -Wl,dynamic_lookup
+#cgo darwin LDFLAGS: -Wl,-undefined,dynamic_lookup
 #cgo darwin LDFLAGS: -Wl,-search_paths_first
 #cgo darwin LDFLAGS: -arch arm64
 
