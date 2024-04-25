@@ -8,9 +8,6 @@ package entry
 #cgo CFLAGS: -I/usr/local/include/node
 #cgo CXXFLAGS: -std=c++11
 
-#cgo darwin LDFLAGS: -Wl,-undefined,dynamic_lookup
-#cgo darwin LDFLAGS: -Wl,-no_pie
-#cgo darwin LDFLAGS: -Wl,-search_paths_first
 #cgo darwin LDFLAGS: -arch x86_64
 
 #cgo linux LDFLAGS: -Wl,-unresolved-symbols=ignore-all
